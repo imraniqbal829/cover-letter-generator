@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+openai
+pydantic-settings
+python-docx         # For parsing .docx CVs and creating .docx letters
+PyMuPDF           # For parsing .pdf CVs (often better than PyPDF2)
+reportlab         # For creating .pdf letters
