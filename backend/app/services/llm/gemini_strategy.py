@@ -17,7 +17,7 @@ class GeminiStrategy(LLMStrategy):
         genai.configure(api_key=api_key)
         
         # Allow the model to be configured via .env, defaulting to a fast and capable model
-        model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-latest")
+        model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
         self.model = genai.GenerativeModel(model_name)
 
     def generate(self, cv_content: str, job_description: str) -> str:
